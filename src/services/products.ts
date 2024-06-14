@@ -10,6 +10,7 @@ const productsStaticData: Products = productsStaticJSON;
 export function getProducts(randomize = RANDOMIZE) {
 	console.log('getProducts');
 
+	// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 	const result = randomize
 		? productsStaticData.map((p) => {
 				p.price = faker.commerce.price();

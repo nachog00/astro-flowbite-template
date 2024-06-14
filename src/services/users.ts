@@ -10,6 +10,7 @@ const usersStaticData: Users = usersStaticJSON;
 export function getUsers(randomize = RANDOMIZE) {
 	console.log('getUsers');
 
+	// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 	const result = randomize
 		? usersStaticData.map((p) => {
 				p.name = faker.name.fullName();
